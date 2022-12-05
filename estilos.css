@@ -1,0 +1,259 @@
+/* ESTILOS DE HTML */
+
+header {
+    display: flex;
+    justify-content: center;
+
+}
+
+body {
+
+    
+    background-image: url(imagenes/fondo2.jpg);
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 20px;
+}
+
+#imagen-rym {
+    border-bottom: #1420a8 3px solid;
+    
+
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 250%;
+    position: relative;
+    left: 50%;
+    /*text-align: right;*/
+    margin-right: 50%;
+}
+
+h1:hover {
+    font-size: 40px;
+    transition: all 0.5s;
+    color: #a09cf6;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: left;
+    height: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    background: linear-gradient(180deg, #a09cf6, #27317b);
+}
+.colum1 h3{
+    font-size: 23px;
+    color: #fff;
+    position: relative;
+    left: 10%;
+    text-decoration: underline;
+    text-align: center;
+
+}
+.colum1 #lista-capitulos{
+    list-style: url(imagenes/nave-espacial-circular.png);
+    
+}
+#lista-capitulos li{
+    font-weight:bold ;
+    margin: 8px;
+}
+#lista-capitulos li:hover{
+    font-size: 18px;
+    
+}
+
+#lista-capitulos li a{
+    text-decoration: none;
+    
+}
+#lista-capitulos li a:hover{
+    color: #fff;
+    transition: all 0.5s;
+}
+#lista-capitulos li a{
+    color: black;
+}
+
+.footer {
+    margin-left:100px;
+   
+}
+.footer p{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.footer-colum{
+    display: flex;
+}
+
+.colum3 #logo-contacto{
+    position: relative;
+    margin: 10px;
+    left: 90px;
+}
+
+.colum3 .lista-contactos {
+    list-style: none;
+}
+
+.colum3{
+    display: flex;
+    
+}
+
+.colum3 .lista-contactos li{
+    position:relative;
+    margin: 10px;
+    right: 100px;
+    top: 130px;
+    
+}
+.colum3 .lista-contactos img{
+    opacity: 0.4;
+}
+.colum3 .lista-contactos img:hover{
+    opacity: 100;
+}
+
+/* ESTILOS DE JS*/
+
+.container-img {
+    width: 150px;
+    height: 150px;
+
+}
+
+.container-img img {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #3b4af5;
+    background: linear-gradient(90deg, #fff, #1420a8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+    text-align: center;
+    color: rgb(21, 17, 17);
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+
+img {
+    border-radius: 14%;
+}
+
+
+.card p {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.card p:hover {
+    background-color: #3b4af5;
+    font-size: 25px;
+    transition: all 0.8s;
+}
+
+/*RESPONSIVE movil */
+
+@media (max-width: 1024px){
+   footer{
+       height: 120%;
+       justify-content: center;
+   }
+   .colum3 .lista-contactos li{
+       position: relative;
+       top: 40px;
+   }
+  
+}
+/*
+@media (min-width: 1024px){
+    .colum3 .lista-contactos li{
+        position: relative;
+        top: 50px;
+    }
+}
+*/
+@media (min-width: 964px){
+    footer{
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .colum3 .lista-contactos li{
+        top: 130px;
+    }
+   
+   
+    
+}
+
+@media (max-width: 964px){
+    footer{
+        font-size: 25px;
+    }
+    
+    .footer-colum{
+     flex-direction: column;
+     align-items: center;
+     align-content: center;
+     width: 150%;
+    }
+    .colum1 #lista-capitulos li{
+        text-align: center;
+    }
+    .colum1 #lista-capitulos a:hover{
+        color: #fff;
+        transition: all 0.5s;
+    }
+.footer{
+    position: relative;
+    bottom: 30px;
+    right: 25px;
+}
+.colum1 h3{
+    font-size: 40px;
+
+}
+.colum3 .lista-contactos li{
+    position: relative;
+    top: 55%;
+}
+ 
+   
+}
+
